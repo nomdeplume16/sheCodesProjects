@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Soup Dumplings</title>
+    <style>
+      body {
+        background: #d32c2c;
+      }
+      h1 {
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 4em;
+        margin: 0 auto;
+      }
+      h2 {
+        text-align: center;
+        border: 3px dotted #f6c667;
+        padding: 20px;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 3em;
+        border-radius: 4px;
+        margin: 0.5em 1em 0.5em 1em;
+        background: #da9711;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 20px;
+      }
+      p {
+        text-align: center;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 1.25em;
+        line-height: 1.25em;
+        margin: 1em 3em 1em 3em;
+      }
+      footer {
+        text-align: center;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 0.85em;
+        margin: 1em 0 0 0;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        background: #f6c667;
+        border: none;
+        padding: 15px 20px;
+        border-radius: 50px;
+        font-family: fantasy;
+      }
+
+      button:hover {
+        background: #ecb546;
+        cursor: pointer;
+        transition: 200ms ease-in-out;
+      }
+      a {
+        text-decoration: none;
+      }
+
+      .information {
+        margin: 0 auto;
+        max-width: 800px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="information">
+      <h1>Soup Dumplings</h1>
+      <h2>🥟Xiǎolóngbāo🥟</h2>
+      <img
+        src="https://as1.ftcdn.net/v2/jpg/01/88/57/28/1000_F_188572839_uvIlrG7ia0l7vDGahryorLn3URSkKKt5.jpg"
+        alt="Soup Dumplings"
+      />
+      <p>
+        Xiaolongbao are traditionally filled with pork. More modern innovations
+        include other meats, seafood, shrimp, crab meat, and vegetarian
+        fillings. Soup dumplings are created by wrapping solid meat aspic inside
+        the skin alongside the meat filling. Heat from steaming then melts the
+        gelatin-gelled aspic into soup. In modern times, refrigeration has made
+        the process of making tangbao during hot weather easier, since making
+        gelled aspic is much more difficult at room temperature.
+      </p>
+      <button>Click to Learn More</button>
+    </div>
+    <footer>This page was made by Leanna Liu</footer>
+    <script>
+      function learn() {
+        if (confirm("Would you like to learn more?")) {
+          location.href = `https://en.wikipedia.org/wiki/Xiaolongbao`;
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", learn);
+    </script>
+  </body>
+</html>
